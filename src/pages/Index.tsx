@@ -71,7 +71,7 @@ const Index = () => {
   };
 
   const copyEmbedCode = () => {
-    const embedCode = `<iframe src="${window.location.origin}/embed" width="100%" height="600" frameborder="0"></iframe>`;
+    const embedCode = `<iframe src="https://smartmemorandum.netlify.app/embed" width="100%" height="600" frameborder="0"></iframe>`;
     navigator.clipboard.writeText(embedCode);
     toast({
       title: "Copied!",
@@ -110,7 +110,7 @@ const Index = () => {
             </p>
             <div className="flex items-center gap-4">
               <code className="flex-1 p-4 bg-gray-100 rounded-lg overflow-x-auto">
-                &lt;iframe src="{window.location.origin}/embed" width="100%" height="600" frameborder="0"&gt;&lt;/iframe&gt;
+                &lt;iframe src="https://smartmemorandum.netlify.app/embed" width="100%" height="600" frameborder="0"&gt;&lt;/iframe&gt;
               </code>
               <Button variant="outline" size="icon" onClick={copyEmbedCode}>
                 <Copy className="h-4 w-4" />
